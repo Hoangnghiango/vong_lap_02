@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau -->
+    <button onclick="tamGiacVuongI()">Tao tam giac vuong I</button>
+    <button onclick="tamGiacVuongII()">Tao tam giac vuong II</button>
+    <button onclick="tamGiacVuongIII()">Tao tam giac vuong II</button>
+
+    <button onclick="tamGiacVuongIV()">Tao tam giac vuong II</button>
+
+
+    <script>
+        function tamGiacVuongI() {
+            for (i = 1; i < 6; i++) {
+                for (j = 1; j <= i; j++) {
+                    document.write("* ")
+                }
+                document.write("<br>")
+            }
+        }
+        function tamGiacVuongII() {
+            for (i = 1; i < 6; i++) {
+                for (j = 5; j >= i; j--) {
+                    document.write("* ")
+                }
+                document.write("<br>")
+
+            }
+        }
+        function tamGiacVuongIII() {
+            for(i=0;i<5;i++){
+                for(j=0;j< 5;j++){
+                    if(j>=4-i){
+                        document.write("*");
+                        continue;
+                    }
+                    document.write(" &nbsp ");
+                }
+               
+                document.write("<br>")
+            }
+        }
+        function tamGiacVuongIV(){
+            for(i=0; i<5; i++){
+                for(j=0;j<5;j++){
+                    if(j<i){
+                        document.write(" &nbsp ");
+                        continue;
+                    }
+                    document.write("*");
+                }
+                document.write("<br>")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

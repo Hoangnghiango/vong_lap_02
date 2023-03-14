@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Tính giai thừa của một số nguyên dương -->
+    <script>
+        var inputNumber = parseInt(prompt("Nhap so nguyen duong:"));
+        var giaithua = inputNumber;
+        for (i = 1; i < inputNumber; i++) {
+            giaithua *= inputNumber - i;
+        }
+        document.write(giaithua);
+    </script>
+</body>
+
+</html>
